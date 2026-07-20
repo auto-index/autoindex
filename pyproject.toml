@@ -1,0 +1,37 @@
+[project]
+name = "autoindex"
+version = "1.0.0"
+description = "AutoIndex: learning executable document representation programs for retrieval"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = [
+    "bm25s>=0.2.14",
+    "datasets>=4.5.0",
+    "fastapi>=0.132.0",
+    "httpx>=0.28.1",
+    "litellm>=1.81.14",
+    # nltk and spacy are not imported by AutoIndex itself, but are advertised to the
+    # Code Agent as packages available to generated preprocessing programs.
+    "nltk>=3.9.2",
+    "pandas>=2.3.3",
+    "python-dotenv>=1.2.1",
+    "pyyaml>=6.0.3",
+    "spacy>=3.8.14",
+    "tqdm>=4.67.3",
+    "uvicorn>=0.41.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+timeout = 30
+markers = [
+    "slow: marks tests that build BM25 indexes or hit real data",
+    "integration: end-to-end tests requiring data/ to exist",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "pytest-timeout>=2.4.0",
+]

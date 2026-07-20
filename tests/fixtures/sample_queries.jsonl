@@ -1,0 +1,5 @@
+{"query_id": "q1", "query_content": "small furry pet animal that hunts mice and has retractable claws", "relevant_doc_ids": ["doc_001"]}
+{"query_id": "q2", "query_content": "planets orbiting the sun including gas giants like Jupiter and Saturn", "relevant_doc_ids": ["doc_002"]}
+{"query_id": "q3", "query_content": "interpreted language with significant whitespace used for object oriented programming", "relevant_doc_ids": ["doc_003"]}
+{"query_id": "q4", "query_content": "process where green plants use sunlight chlorophyll to make glucose from carbon dioxide", "relevant_doc_ids": ["doc_005"]}
+{"query_id": "q5", "query_content": "tallest mountain in the world located between Nepal and Tibet in the Himalayas", "relevant_doc_ids": ["doc_007"]}

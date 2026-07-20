@@ -1,0 +1,20 @@
+analysis_model: "openai/claude-sonnet-4-6"
+analysis_temperature: 1.0
+code_model: "openai/claude-sonnet-4-6"
+code_temperature: 1.0
+api_base: "https://thekeymaker.umass.edu/"
+
+server_port: 8765
+server_persist_dir: ".bm25_cache"
+server_startup_timeout: 300      # 5 minutes - safe for large indexes
+preprocess_timeout_seconds: 900  # 15 minutes - middle ground
+bm25_batch_size: 100000          # Good balance
+
+corpus_size: null                # Full corpus
+max_distractors: null            # No limits
+
+max_hypotheses: 4
+recall_improvement_threshold: 0.00001
+analysis_max_turns: 5
+min_tool_turns: 3
+use_tools: true

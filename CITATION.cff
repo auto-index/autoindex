@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use AutoIndex in your research, please cite it as below."
+title: "AutoIndex: Learning Representation Programs for Retrieval"
+authors:
+  - family-names: "O'Nuallain"
+    given-names: "Sam"
+  - family-names: "Rajkumar"
+    given-names: "Nithya"
+  - family-names: "Narayanasamy"
+    given-names: "Ramya"
+  - family-names: "Jiang"
+    given-names: "Hanna"
+  - family-names: "Chaudhari"
+    given-names: "Shreyas"
+  - family-names: "Drozdov"
+    given-names: "Andrew"
+license: MIT
+repository-code: "https://github.com/samonuall/autoindex"
+preferred-citation:
+  type: article
+  title: "AutoIndex: Learning Representation Programs for Retrieval"
+  authors:
+    - family-names: "O'Nuallain"
+      given-names: "Sam"
+    - family-names: "Rajkumar"
+      given-names: "Nithya"
+    - family-names: "Narayanasamy"
+      given-names: "Ramya"
+    - family-names: "Jiang"
+      given-names: "Hanna"
+    - family-names: "Chaudhari"
+      given-names: "Shreyas"
+    - family-names: "Drozdov"
+      given-names: "Andrew"
+  year: 2026
+  notes: "Preprint. Under review."
