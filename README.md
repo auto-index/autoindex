@@ -1,6 +1,6 @@
 # AutoIndex: Learning Representation Programs for Retrieval
 
-AutoIndex is a framework for learning **representation programs**: executable transformations that map raw documents into the representations exposed to a retrieval system. Rather than tuning retrievers, rerankers, or a small set of preprocessing hyperparameters, AutoIndex searches over programs that slice, enrich, normalize, reweight, or reorganize documents before indexing — using retrieval performance on a validation set as the objective, with the retriever (BM25) held fixed.
+AutoIndex is a framework for learning **representation programs**: executable transformations that map raw documents into the representations exposed to a retrieval system. Rather than tuning retrievers, rerankers, or a small set of preprocessing hyperparameters, AutoIndex searches over programs that preprocess documents before indexing. AutoIndex sets retrieval performance on a validation set as the objective, with the retriever (BM25) held fixed.
 
 On [CRUMB](https://huggingface.co/datasets/jfkback/crumb), a benchmark of eight heterogeneous retrieval tasks, the learned programs improve recall over a static full-document BM25 baseline on all 8 tasks, with average gains of **+8.4% Recall@100** and **+8.3% nDCG@10** (largest gains: +30.5% Recall@100, +43.6% nDCG@10).
 
