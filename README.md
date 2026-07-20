@@ -27,10 +27,10 @@ On [CRUMB](https://huggingface.co/datasets/jfkback/crumb), a benchmark of eight 
 
 Each iteration:
 
-1. **Index** — the current representation program (`preprocess.py`) is executed on the corpus and a BM25 index is built (`bm25s`, Lucene scoring, `k1=1.5, b=0.75`). Chunk scores are aggregated to documents with MaxP.
-2. **Analyze** — the **Analysis Agent** diagnoses retrieval behavior under the current index using a read-only tool set (`bm25_retrieve`, `read_file`, `grep_search`) over a stratified slice of validation queries (regressions vs. the initial program, recall violations, and small-margin positives), and produces a structured failure summary grounded in concrete examples.
-3. **Synthesize** — the **Code Agent** conditions on the summary and the search history (previously evaluated programs and their validation outcomes) and proposes N candidate programs.
-4. **Select** — every candidate is executed, indexed, and scored on validation queries. Candidates that improve validation Recall@100 by at least a threshold are retained; if several survive, the LLM is asked to synthesize a combined program, adopted only if it beats the best individual candidate.
+1. **Index**: the current representation program (`preprocess.py`) is executed on the corpus and a BM25 index is built (`bm25s`, Lucene scoring, `k1=1.5, b=0.75`). Chunk scores are aggregated to documents with MaxP.
+2. **Analyze**: the **Analysis Agent** diagnoses retrieval behavior under the current index using a read-only tool set (`bm25_retrieve`, `read_file`, `grep_search`) over a stratified slice of validation queries (regressions vs. the initial program, recall violations, and small-margin positives), and produces a structured failure summary grounded in concrete examples.
+3. **Synthesize**: the **Code Agent** conditions on the summary and the search history (previously evaluated programs and their validation outcomes) and proposes N candidate programs.
+4. **Select**: every candidate is executed, indexed, and scored on validation queries. Candidates that improve validation Recall@100 by at least a threshold are retained; if several survive, the LLM is asked to synthesize a combined program, adopted only if it beats the best individual candidate.
 
 The best validation checkpoint is evaluated once on held-out queries. The learned program is applied at indexing time with no further LLM calls.
 
