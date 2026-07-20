@@ -147,7 +147,7 @@ uv run pytest -v                                     # everything
 ## Citation
 
 ```bibtex
-@article{onuallain2026autoindex,
+@article{2026autoindex,
   title  = {AutoIndex: Learning Representation Programs for Retrieval},
   author = {O'Nuallain, Sam and Rajkumar, Nithya and Narayanasamy, Ramya and
             Jiang, Hanna and Chaudhari, Shreyas and Drozdov, Andrew},
