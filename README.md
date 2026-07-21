@@ -152,7 +152,7 @@ uv run pytest -v                                     # everything
   author = {O'Nuallain, Sam and Rajkumar, Nithya and Narayanasamy, Ramya and
             Jiang, Hanna and Chaudhari, Shreyas and Drozdov, Andrew},
   year   = {2026},
-  note   = {Preprint. Under review.}
+  note   = {Preprint.}
 }
 ```
 
