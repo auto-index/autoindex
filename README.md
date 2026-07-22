@@ -147,12 +147,15 @@ uv run pytest -v                                     # everything
 ## Citation
 
 ```bibtex
-@article{2026autoindex,
-  title  = {AutoIndex: Learning Representation Programs for Retrieval},
-  author = {O'Nuallain, Sam and Rajkumar, Nithya and Narayanasamy, Ramya and
-            Jiang, Hanna and Chaudhari, Shreyas and Drozdov, Andrew},
-  year   = {2026},
-  note   = {Preprint.}
+@misc{onuallain2026autoindex,
+  title         = {{AutoIndex}: Learning Representation Programs for Retrieval},
+  author        = {Sam O'Nuallain and Nithya Rajkumar and Ramya Narayanasamy and
+                   Hanna Jiang and Shreyas Chaudhari and Andrew Drozdov},
+  year          = {2026},
+  eprint        = {2607.18603},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.IR},
+  url           = {https://arxiv.org/abs/2607.18603},
 }
 ```
 
